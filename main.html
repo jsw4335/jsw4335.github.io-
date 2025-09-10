@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>First portfolio</title>
+
+    <style>
+        h1{color:rgb(57, 173, 18); text-align: center; font-size: 48px;}
+        div{color: white; text-align: center; font-size: 32px;}
+        body{background-color: rgb(86, 87, 85);}
+
+        /* 카드 전체를 가로로 정렬 */
+        .img_container {
+            display: flex;              /* 가로 정렬 */
+            justify-content: center;    /* 가운데 배치 */
+            gap: 30px;                  /* 카드 사이 간격 */
+            margin-top: 30px;
+        }
+
+        /* 이미지 크기 조정 */
+        .img_pf {
+            width: 800px;   /* 원하는 이미지 크기 */
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .img_button{background-color: rgb(245, 246, 244); 
+                color: rgb(0, 0, 0); 
+                padding: 8px; border-radius: 5px; 
+                font-size: 16px;width: 72px; height:36px}
+                
+        .img_button:hover{background-color: rgb(20, 239, 12); cursor: pointer;}
+        p{font-family: verdana; font-size: 20px;}
+    </style>
+    
+</head>
+<body>
+    <h1>조성원의 포트 폴리오</h1>
+    <div>안녕하세요
+        <br>
+        조성원의 프로그래머스 첫번째 포트폴리오 입니다.</div>
+
+    <div class="img_container">
+            <div>
+                <img class="img_pf" src="./img/badminton.jpg">
+                <p class="img_tittle"> 배드민턴 마켓 </p>
+                <input class="img_button" type="button" value="order" 
+                onclick="alert('배드민턴 마켓에 오신 것을 환영합니다!')">
+            </div>
+        
+            <div>
+                <img class="img_pf" src="./img/fashion.jpg">
+                <p class="img_tittle"> 온라인 패션 쇼핑몰 </p>
+                <input class="img_button" type="button" value="order"
+                 onclick="alert('온라인 패션 쇼핑몰에 오신 것을 환영합니다!')">
+            </div>
+
+            <div>
+                <img class="img_pf" src="./img/finance.jpg">
+                <p class="img_tittle"> 저축 사이트 </p>
+                <input class="img_button" type="button" value="order" 
+                onclick="alert('저축 사이트 방문을 환영합니다!')">
+            </div>
+        </div>
+    
+</body>
+</html>
